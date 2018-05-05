@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<style>
+
+@font-face {
+    font-family: myFont;
+    src: url(fonts/audiowide-regular-webfont.woff);
+}
+
+body{
+margin:0px;
+}
+
+.header {
+	width:100%;
+	height: 60px;
+	background-color: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	top: 0px;
+}
+
+.header-center{
+	width:900px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	height:60px;
+}
+
+.header-center div {
+float:left;
+}
+
+.menu ul li {
+display: inline-block;
+height:100%;
+font-size: 14px;
+}
+
+.menu{
+top:0px;
+height:100%;
+}
+
+.menu ul {
+height:100%;
+margin:0px;
+}
+
+.menu ul li a {
+display:block;
+text-decoration: none;
+color:white;
+font-family: arial;
+padding: 23px 25px 20px;
+<!-- background-color: none; -->
+}
+
+.menu ul li a:hover {
+background-color:black;
+color:gray;
+}
+
+
+.content {
+            width: 900px;
+            margin: 0 auto;
+        }
+
+        .slider {
+            background-image: url(img/bg-home.jpg);
+            background-size: 150% auto;
+            padding: 90px 0px 0px;
+        }
+
+        .mainSlideTitle {
+            position: relative;
+            z-index: 2;
+        }
+
+            .mainSlideTitle h1 {
+                position: absolute;
+                top: 89px;
+                right: 105px;
+                color: white;
+                font-size: 48px;
+				font-family: myFont;
+				font-weight:100;
+            }
+
+            .mainSlideTitle h3 {
+                position: absolute;
+                top: 160px;
+                right: 220px;
+                color: white;
+                font-size: 30px;
+                font-family: Arial;
+                font-weight: 100;
+            }
+
+            .mainSlideTitle a {
+                position: absolute;
+                top: 235px;
+                right: 250px;
+                background: black;
+                display: block;
+                padding: 10px 25px;
+                color: gray;
+                text-decoration: none;
+            }
+			
+			.mainSlideTitle img {
+			height: 400px;
+			}
+
+			.purple {
+			color: white;
+			background-color: #8e1c63;
+			text-align: center;
+			padding: 5px;
+			}
+
+		.footer {
+			width: 100%;
+			height: 70px;
+			text-align: center;
+			
+			}
+	
+		
+		.follow {
+			background-color: #c9cacc;
+			padding: 8px;
+			height: 65px;
+			}
+
+
+		.follow img {
+			vertical-align: middle;
+			width: 38px;
+			height: 30px;
+			}	
+
+		.follow h4 {
+			text-align: center;
+			color: white;
+		}
+
+		.follow span {
+			font-size:22px;
+			margin-right: 25px;
+			vertical-align: middle;	
+			font-family:myFont;
+			     }			
+		.rights {
+			width: 100%;
+			height: 65px;
+			}
+
+		.rights h5 {
+
+			font-size: 10px;
+			   }
+			
+        .featured-slider {
+            position: relative;
+            background: rgba(0, 0, 0, 0.41);
+            margin-top: -27px;
+        }
+
+            .featured-slider h2 {
+                margin: 0;
+                padding: 10px;
+                text-align: center;
+                color: gray;
+				font-family: myFont;
+            }
+
+            .featured-slider img {
+                width: 25%;
+                display: block;
+                float: left;
+            }
+
+			.clear-both{
+			clear:both;
+			}
+			
+			.left-featured{
+			float:left;
+			width:50%;
+			}
+			.right-featured{
+			float:left;
+			width:50%;
+			}
+			
+			.left-featured img {
+			width: 400px;
+			}
+			
+			.minipost img{
+			float:left;
+			}
+			
+			.minipost{
+			height:90px;
+			}
+			
+			.minipost h4 {
+			padding-left:120px;
+			font-family: myFont;
+			color:gray;
+			margin: 5px 0px;
+			
+			}
+			
+			.minipost p {
+			padding-left:120px;
+			color:gray;
+			margin: 5px 0px;
+			font-size:12px;
+			font-family:arial;
+			}
+			
+			.featured-bottom h3 {
+			font-family:myFont;
+			color:white;
+			}
+			
+			.featured-bottom{
+			background-color:black;
+			height:320px;
+			}
+			
+			.btn-small{
+			background-color:purple;
+			padding: 5px 15px;
+			text-decoration:none;
+			color:white;
+			float:right;
+			}
+			<!-- .discription{ -->
+			<!-- float:left; -->
+			<!-- } -->
+			.mission h3 {
+			font-family:myFont;
+			}
+			
+			.mission p{
+			font-family: arial;
+			}
+</style>
+</head>
+<body>
+
+<div class="header">
+
+<div class="header-center">
+	<div class="logo">
+	<a class="logo-link" href="index.html">
+		<img class="logo-img" src="img/logo.png"/>
+	</a>
+	</div>
+	<div class="menu">
+		<ul>
+			<li class="home-li">
+				<a class="home-link" href="index.html">HOME</a>
+			</li>
+			<li class="about-li">
+				<a class="about-link" href="index.html">ABOUT</a>
+			</li>
+			<li class="projects-li">
+				<a class="projects-link" href="index.html">PROJECTS</a>
+			</li>
+			<li class="blog-li">
+				<a class="blog-link" href="index.html">BLOG</a>
+			</li>
+			<li class="contact-li">
+				<a class="contact-link" href="index.html">CONTACT</a>
+			</li>
+		</ul>
+	</div>
+</div>
+</div>
+
+<div class="slider">
+        <div class="content">
+            <div class="mainSlideTitle">
+                <img src="img/satellite.png" />
+                <h1>SOYUZ TMA-M</h1>
+                <h3>SPACECRAFT</h3>
+                <a class="btn btn-more" href="#">READ MORE</a>
+            </div>
+
+            <div class="featured-slider">
+                <h2>Featured projects</h2>
+                <img src="img/project-image1.jpg" />
+                <img src="img/project-image2.jpg" />
+                <img src="img/project-image3.jpg" />
+                <img src="img/project-image4.jpg" />
+				<div class="clear-both" ></div>
+            </div>
+        </div>
+
+    </div>
+
+	<div class="mission">
+
+		<div class="purple"><h3>OUR MISSION</h3><p>This website template has been designed by Free Website Templates for you, for free. 
+								You can<br>replace this text with your own.</p>
+				</div>
+		
+
+	</div>
+	
+	<div class="featured-bottom">
+	<div class="content">
+		<div class="left-featured">
+			<h3>FEATURED VIDEO</h3>
+			<img src= "img/mars-rover.jpg"/>
+		</div>
+		<div class="right-featured">
+			<h3>LATEST BLOG</h3>
+			<div class="minipost">
+				<img src="img/finding-planet.jpg"/>
+				<div class="discription">
+				<h4>FINDING PLANET X-123</h4>
+				<p>FEBRUARY 6, 2023</p>
+				<a class="btn btn-small" href=#>READ MORE</a>
+				</div>
+			</div>
+			<hr>
+			<div class="minipost">
+				
+				<img src="img/new-satellitedish.jpg"/>
+				<div class="discription">
+				<h4>NEW SATELLITE DISH</h4>
+				<p>FEBRUARY 3, 2023</p>
+				<a class="btn btn-small" href=#>READ MORE</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+
+		<div class="footer">
+		<div class="follow"><h4><span>FOLLW OUR MISSIONS ON</span>  
+			   
+			<a href="http://facebook.com"><img src="img/ico_0000_facebook.png" alt="facebook"></a>
+			<a href="http://twiter.com"><img src="img/ico_0001_twitter.png" alt="twiter"></a>
+			<a href="http://plus.google.com/discover"><img src="img/ico_0002_Shape-165.png" alt="google plus"></a>
+			<a href="http://pintrest.com"><img src="img/ico_0003_pinterest.png" alt="pintrest"></a>
+			
+		</h4> 
+			
+		</div>
+		<div class="rights">
+			<h5>&copy 2023 BYSPACE PROSPECTION | ALL RIGHTS RESERVED</h5>
+
+		</div>
+
+
+
+
+	</div>
+	
+</body>
+</html>

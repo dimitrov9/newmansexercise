@@ -1,0 +1,22 @@
+﻿@model List<TestEntityFramework.Models.CardInfo>
+@{
+    ViewBag.Title = "Index";
+}
+
+@foreach (var cardInfo in Model)
+{
+    <p>@cardInfo.Name - @cardInfo.Duration with @cardInfo.VisitsInWeek visits for week.</p>
+    foreach(var price in cardInfo.Pricings.OrderBy(x => x.FromDateTime))
+    {
+        <p class="@(DateTime.Now > price.FromDateTime && DateTime.Now < price.ToDateTime ? "bold" : "")">
+            @price.Price (@price.FromDateTime.ToString("dd.MM.yyyy") - @price.ToDateTime.ToString("dd.MM.yyyy"))
+        </p>
+    }
+}
+
+
+<style>
+    .bold {
+        font-weight: 700;
+    }
+</style>

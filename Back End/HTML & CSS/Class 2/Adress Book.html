@@ -1,0 +1,96 @@
+<!doctype>
+<html>
+<head>
+    <title></title>
+    <style>
+        body {
+            background: #f3f3f3;
+        }
+
+        #adressBook {
+            background: #038450;
+            padding: 5px;
+        }
+
+            #adressBook ul {
+                list-style: none;
+                padding: 0px;
+                margin: 0px;
+            }
+
+                #adressBook ul li {
+                    display: inline-block;
+                    padding: 10px;
+                    background: aliceblue;
+                    border: 1px solid #aecde8;
+                }
+
+        #allContacts {
+            background: #f3f3f3;
+            padding: 10px;
+        }
+
+        .contact {
+            padding: 10px 0px;
+            border-bottom: 1px solid gray;
+            transition: background 2s ease-in-out;
+        }
+
+        #allContacts .contact:last-child {
+            border-bottom: none;
+        }
+
+        .contact p {
+            margin: 0px;
+        }
+
+        .contact:hover {
+            cursor: pointer;
+            transition: background 1s ease-in-out;
+        }
+
+            .contact:hover:nth-child(odd) {
+                background: #4cff00;
+            }
+            .contact:hover:nth-child(even) {
+                background: #ffd800;
+            }
+    </style>
+</head>
+<body>
+    <div id="adressBook">
+        <ul>
+            <li>Show all contacts</li>
+            <li>Hide all contacts</li>
+        </ul>
+        <div id="tabHolder">
+            <div id="allContacts">
+                <!--1 contact-->
+                <div class="contact">
+                    <p>Name: DD</p>
+                    <p>Phone:123456</p>
+                    <p>Email:dd@dd.dd</p>
+                </div>
+                <!--2 contact-->
+                <div class="contact">
+                    <p>Name: DD</p>
+                    <p>Phone:123456</p>
+                    <p>Email:dd@dd.dd</p>
+                </div>
+                <!--3 contact-->
+                <div class="contact">
+                    <p>Name: DD</p>
+                    <p>Phone:123456</p>
+                    <p>Email:dd@dd.dd</p>
+                </div>
+                <!--4 contact-->
+                <div class="contact">
+                    <p>Name: DD</p>
+                    <p>Phone:123456</p>
+                    <p>Email:dd@dd.dd</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

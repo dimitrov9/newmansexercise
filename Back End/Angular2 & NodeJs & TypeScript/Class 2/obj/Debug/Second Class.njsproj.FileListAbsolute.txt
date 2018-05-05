@@ -1,0 +1,3 @@
+C:\Users\Valentina Dimitrov\Documents\NewMans Academy\Back End\Angular2 & NodeJs & TypeScript\Class 2\obj\Debug\Second Class.njsprojResolveAssemblyReference.cache
+C:\Users\Valentina Dimitrov\Documents\NewMans Academy\Back End\Angular2 & NodeJs & TypeScript\Class 2\obj\Debug\Second Class.njsproj.CoreCompileInputs.cache
+C:\Users\Valentina Dimitrov\Documents\NewMans Academy\Back End\Angular2 & NodeJs & TypeScript\Class 2\bin\Microsoft.NodejsTools.WebRole.dll

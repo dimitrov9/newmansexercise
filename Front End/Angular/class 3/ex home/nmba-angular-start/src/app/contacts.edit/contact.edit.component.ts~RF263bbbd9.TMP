@@ -1,0 +1,66 @@
+import { Component } from '@angular/core';
+import { ContactsService } from '../shared/contacts.service';
+import { ActivatedRoute, Router } from '@angular/router'
+import { Contact, Address } from '../models/contact';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+
+@Component({
+  selector: 'trm-contact-edit',
+  templateUrl: './contact.edit.component.html'
+})
+export class ContactEditComponent {
+  contact: Contact;
+
+  form: FormGroup;
+
+  constructor(private route: ActivatedRoute,
+              private fb: FormBuilder,
+              private router: Router,
+              private cs: ContactsService)
+  {
+    route.data.map(data => data['contact'])
+      .subscribe(contact => { this.contact = contact });
+
+    this.form = fb.group({
+      name: [this.contact.name],
+      email: [this.contact.email],
+      phone: [this.contact.phone],
+      birthday: [this.contact.birthday],
+      website: [this.contact.website],
+      street: [this.contact.address.street],
+      zip: [this.contact.address.zip],
+      city: [this.contact.address.city],
+      country: [this.contact.address.country]
+    });
+  }
+
+  cancel() {
+    this.goToDetails(this.contact);
+  }
+
+  save() {
+    this.updateContactFromForm();
+    this.cs.updateContact(this.contact)
+      .subscribe(contact => this.goToDetails(contact));
+  }
+
+  private goToDetails(contact: Contact) {
+    this.router.navigate(['/contact', contact.id]);
+  }
+
+
+  private updateContactFromForm() {
+    /// <summary>Updates the contact variable from the form.</summary> 
+
+    this.contact.name = this.form.get('name').value;
+    this.contact.email = this.form.get('email').value;
+    this.contact.phone = this.form.get('phone').value;
+    this.contact.birthday = this.form.get('birthday').value;
+    this.contact.website = this.form.get('website').value;
+    this.contact.address.street = this.form.get('street').value;
+    this.contact.address.zip = this.form.get('zip').value;
+    this.contact.address.city = this.form.get('city').value;
+    this.contact.address.country = this.form.get('country').value;
+
+  }
+}

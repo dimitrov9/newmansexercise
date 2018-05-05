@@ -1,0 +1,12 @@
+<mat-list>
+  <a mat-list-item
+     [routerLink]="['/contact',contact.id]"
+     *ngFor="let contact of contacts | async">
+    <img matListAvatar [src]="contact?.image" alt="Portait of {{contact?.name}}">
+    <h3 matLine> {{contact?.name}} </h3>
+    <p matLine>
+      <span> {{contact?.email}} </span>
+      <!--<span class="demo-2"> -- {{contact?.phone}} </span>-->
+    </p>
+  </a>
+</mat-list>

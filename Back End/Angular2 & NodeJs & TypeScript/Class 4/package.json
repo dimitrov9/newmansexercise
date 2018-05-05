@@ -1,0 +1,16 @@
+{
+  "name": "nmba-backend-class-4",
+  "version": "1.0.0",
+  "description": "Demo NMBA Class 4 package",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Nikola Dimitrov",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0"
+  }
+}

@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        body {
+            margin:0px
+        }
+
+        .content {
+            width: 900px;
+            margin: 0 auto;
+        }
+
+        .slider {
+            background-image: url(img/bg-home.jpg);
+            background-size: 130% auto;
+            padding: 65px 0px;
+        }
+
+        .mainSlideTitle {
+            position: relative;
+            z-index: 2;
+        }
+
+            .mainSlideTitle h1 {
+                position: absolute;
+                top: 89px;
+                right: 105px;
+                color: white;
+                font-size: 48px;
+            }
+
+            .mainSlideTitle h3 {
+                position: absolute;
+                top: 160px;
+                right: 183px;
+                color: white;
+                font-size: 30px;
+                font-family: Arial;
+                font-weight: 100;
+            }
+
+            .mainSlideTitle a {
+                position: absolute;
+                top: 235px;
+                right: 206px;
+                background: black;
+                display: block;
+                padding: 10px 25px;
+                color: gray;
+                text-decoration: none;
+            }
+
+        .featured-slider {
+            position: relative;
+            background: rgba(0, 0, 0, 0.41);
+            margin-top: -27px;
+        }
+
+            .featured-slider h2 {
+                margin: 0;
+                padding: 20px;
+                text-align: center;
+                color: gray;
+            }
+
+            .featured-slider img {
+                width: 25%;
+                display: block;
+                float: left;
+            }
+    </style>
+</head>
+<body>
+    <div class="slider">
+        <div class="content">
+            <div class="mainSlideTitle">
+                <img src="img/satellite.png" />
+                <h1>SOYUZ TMA-M</h1>
+                <h3>SPACECRAFT</h3>
+                <a class="btn btn-more" href="#">READ MORE</a>
+            </div>
+
+            <div class="featured-slider">
+                <h2>Featured projects</h2>
+                <img src="img/project-image1.jpg" />
+                <img src="img/project-image2.jpg" />
+                <img src="img/project-image3.jpg" />
+                <img src="img/project-image4.jpg" />
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

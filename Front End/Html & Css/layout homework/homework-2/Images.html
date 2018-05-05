@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <link rel="stylesheet" type="text/css" href="../sidebar-menu.css">
+    <link rel="stylesheet" type="text/css" href="../footer-css.css">
+  <!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> -->
+  
+  <style>
+  .start-layout{
+  <!-- border:solid; -->
+  float:left;
+  }
+  .head-banner{
+  height: 200px;
+  }
+  .head-banner img {
+  width:100%;
+  }
+  .sidebar-div{
+  height:1000px;
+  margin-top:10px;
+  
+  }
+  .box {
+  height:205px;
+  margin:10px 20px;
+  
+  }
+  .box img{
+  width:200px;
+  height:200px;
+  }
+  .down-banner{
+  height:300px;
+  
+  }
+  .down-banner img {
+  height:100%;
+  width:100%;
+  }
+  .footer-banner{
+  height:100px;
+  }
+  
+  
+  </style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  <div class="container">
+	<div class="row">
+		<div class="col-sm-12 start-layout head-banner" > 
+			<img src="../images/Logo_Beats_by_Dr_Dre.png" />
+		</div>
+	</div>
+	  <div class="row">
+		<div class="sidebar-div col-sm-4 start-layout " > 
+			<nav class="navbar navbar-default sidebar" role="navigation">
+				<div class="container-fluid">
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-sidebar-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>      
+				</div>
+				<div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">
+				  <ul class="nav navbar-nav">
+					<li class="active"><a href="../index.html">Homework 1<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
+					<li class="dropdown">
+					  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Homework 2 <span class="caret"></span><span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-user"></span></a>
+					  <ul class="dropdown-menu forAnimate" role="menu">
+						<li><a href="../homework-2/Typography.html">Typography</a></li>
+						<li class="divider"></li>
+						<li><a href="../homework-2/Code.html"">Code</a></li>
+						<li class="divider"></li>
+						<li><a href="../homework-2/Tables.html">Tables</a></li>
+						<li class="divider"></li>
+						<li><a href="../homework-2/Images.html">Images</a></li>
+					  </ul>
+					</li>          
+					</ul>
+				</div>
+			  </div>
+			</nav>
+		</div>
+		<div class="col-sm-8">
+		<div class="bs-docs-section"> <h1 class="page-header" id="images"><a class="anchorjs-link " href="#images" aria-label="Anchor link for: images" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Images</h1> <h2 id="images-responsive"><a class="anchorjs-link " href="#images-responsive" aria-label="Anchor link for: images responsive" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Responsive images</h2> <p>Images in Bootstrap 3 can be made responsive-friendly via the addition of the <code>.img-responsive</code> class. This applies <code>max-width: 100%;</code>, <code>height: auto;</code> and <code>display: block;</code> to the image so that it scales nicely to the parent element.</p> <p>To center images which use the <code>.img-responsive</code> class, use <code>.center-block</code> instead of <code>.text-center</code>. <a href="../css/#helper-classes-center">See the helper classes section</a> for more details about <code>.center-block</code> usage.</p> <div class="bs-callout bs-callout-warning" id="callout-images-ie-svg"> <h4>SVG images and IE 8-10</h4> <p>In Internet Explorer 8-10, SVG images with <code>.img-responsive</code> are disproportionately sized. To fix this, add <code>width: 100% \9;</code> where necessary. Bootstrap doesn't apply this automatically as it causes complications to other image formats.</p> </div> <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">class=</span><span class="s">"img-responsive"</span> <span class="na">alt=</span><span class="s">"Responsive image"</span><span class="nt">&gt;</span></code></pre></figure> <h2 id="images-shapes"><a class="anchorjs-link " href="#images-shapes" aria-label="Anchor link for: images shapes" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Image shapes</h2> <p>Add classes to an <code>&lt;img&gt;</code> element to easily style images in any project.</p> <div class="bs-callout bs-callout-danger" id="callout-images-ie-rounded-corners"> <h4>Cross-browser compatibility</h4> <p>Keep in mind that Internet Explorer 8 lacks support for rounded corners.</p> </div> <div class="bs-example bs-example-images" data-example-id="image-shapes"> <img alt="140x140" data-src="holder.js/140x140" class="img-rounded" style="width: 140px; height: 140px;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgdmlld0JveD0iMCAwIDE0MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzE0MHgxNDAKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNWZkNjZlNjRmYyB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1ZmQ2NmU2NGZjIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjQ0LjA2MjUiIHk9Ijc0LjU1NjI1Ij4xNDB4MTQwPC90ZXh0PjwvZz48L2c+PC9zdmc+" data-holder-rendered="true"> <img alt="140x140" data-src="holder.js/140x140" class="img-circle" style="width: 140px; height: 140px;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgdmlld0JveD0iMCAwIDE0MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzE0MHgxNDAKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNWZkNjZlODIzYSB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1ZmQ2NmU4MjNhIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjQ0LjA2MjUiIHk9Ijc0LjU1NjI1Ij4xNDB4MTQwPC90ZXh0PjwvZz48L2c+PC9zdmc+" data-holder-rendered="true"> <img alt="140x140" data-src="holder.js/140x140" class="img-thumbnail" style="width: 140px; height: 140px;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgdmlld0JveD0iMCAwIDE0MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzE0MHgxNDAKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNWZkNjZlNTU2MyB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1ZmQ2NmU1NTYzIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjQ0LjA2MjUiIHk9Ijc0LjU1NjI1Ij4xNDB4MTQwPC90ZXh0PjwvZz48L2c+PC9zdmc+" data-holder-rendered="true"> </div> <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">alt=</span><span class="s">"..."</span> <span class="na">class=</span><span class="s">"img-rounded"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">alt=</span><span class="s">"..."</span> <span class="na">class=</span><span class="s">"img-circle"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">alt=</span><span class="s">"..."</span> <span class="na">class=</span><span class="s">"img-thumbnail"</span><span class="nt">&gt;</span></code></pre></figure> </div>
+</div>
+<div class="row">
+		<div class="col-sm-12 start-layout footer-banner" >
+  
+			<footer>
+			 <div class="container">
+			   <div class="row">
+			   
+						<div class="col-lg-5 col-md-5 col-sm-4 col-xs-12">
+							<ul class="adress">
+								 <span>Adress</span>    
+								 <li>
+									<p>Lorem ipsum dolor sit amet, vero omnis vocibus</p>
+								  </li>
+									   
+								  <li>
+									<p>+90 1234 56789</p>
+								  </li>
+									   
+								  <li>
+									<p>info@gmail.com</p>
+								  </li>
+							 </ul>
+						</div>
+						
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+							<ul class="contact">
+								 <span>Sitemap</span>    
+								 <li>
+									<a href="../index.html">Homework 1</a>
+								  </li>
+									   
+								  <li>
+									 <a href="#">Homework 2</a>
+								  </li>
+									   
+								  <li>
+									<a href="../homework-2/Typography.html">Typography</a>
+								  </li>
+									   
+								  <li>
+									 <a href="../homework-2/Code.html">Code </a>
+								  </li>
+									   
+								  <li>
+									<a href="../homework-2/Tables.html">Tables</a>
+								 </li>
+								 <li>
+									<a href="../homework-2/Images.html">Images</a>
+								 </li>
+							</ul>
+						</div>
+				   
+				   
+						<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+						   <ul class="social">
+									  <span>Social</span>    
+									   <li>
+											<a href="#"><i class="fa fa-facebook fa-2x"></i></a>
+									   </li>
+									  
+									   <li>
+											<a href="#"><i class="fa fa-github fa-2x"></i></a>
+									   </li>
+										
+									   <li>
+											<a href="#"><i class="fa fa-linkedin fa-2x"></i></a>
+									   </li>
+									   
+									   <li>
+											<a href="#"><i class="fa fa-tumblr fa-2x"></i></a>
+									   </li>
+										
+									   <li>
+											<a href="#"><i class="fa fa-google-plus fa-2x"></i></a>
+									  </li>
+									  
+							 </ul>
+						</div>
+				   
+				   
+				   </div> 
+				</div>
+			</footer>
+		</div>
+	</div>
+</div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>

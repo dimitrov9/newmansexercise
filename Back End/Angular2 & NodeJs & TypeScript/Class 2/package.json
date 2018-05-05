@@ -1,0 +1,21 @@
+{
+  "name": "nmba-backend-group-2",
+  "version": "1.0.0",
+  "description": "Demo NMBA Group 2 package",
+  "main": "lesson1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "demo",
+    "nmba",
+    "backend"
+  ],
+  "author": "dejan Mladenovski",
+  "license": "MIT",
+  "dependencies": {
+    "connect": "^3.6.5",
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0"
+  }
+}

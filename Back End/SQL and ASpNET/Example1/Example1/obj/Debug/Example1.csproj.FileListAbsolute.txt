@@ -1,0 +1,8 @@
+C:\Users\Valentina Dimitrov\Documents\NewMans Academy\Back End\SQL and ASpNET\Example1\Example1\bin\ApplicationInsights.config
+C:\Users\Valentina Dimitrov\Documents\NewMans Academy\Back End\SQL and ASpNET\Example1\Example1\bin\Example1.dll.config
+C:\Users\Valentina Dimitrov\Documents\NewMans Academy\Back End\SQL and ASpNET\Example1\Example1\bin\Example1.dll
+C:\Users\Valentina Dimitrov\Documents\NewMans Academy\Back End\SQL and ASpNET\Example1\Example1\bin\Example1.pdb
+C:\Users\Valentina Dimitrov\Documents\NewMans Academy\Back End\SQL and ASpNET\Example1\Example1\obj\Debug\Example1.csprojResolveAssemblyReference.cache
+C:\Users\Valentina Dimitrov\Documents\NewMans Academy\Back End\SQL and ASpNET\Example1\Example1\obj\Debug\Example1.csproj.CoreCompileInputs.cache
+C:\Users\Valentina Dimitrov\Documents\NewMans Academy\Back End\SQL and ASpNET\Example1\Example1\obj\Debug\Example1.dll
+C:\Users\Valentina Dimitrov\Documents\NewMans Academy\Back End\SQL and ASpNET\Example1\Example1\obj\Debug\Example1.pdb

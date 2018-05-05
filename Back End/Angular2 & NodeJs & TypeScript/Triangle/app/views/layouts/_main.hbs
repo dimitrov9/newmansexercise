@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{> _header}}
+  </head>
+
+  <body>
+    {{#unless hideNavigation}}
+  	 {{> _navigation}}
+    {{/unless}}
+    <!--/#header-->
+    {{{body}}}
+    {{#unless hideFooter}}
+      {{> _footer}}
+    {{/unless}}
+  </body>
+</html>

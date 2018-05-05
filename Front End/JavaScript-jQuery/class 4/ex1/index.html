@@ -1,0 +1,100 @@
+﻿<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>NewMens JS/jQuery</title>
+    <meta name="description" content="js/jQuery lessons ">
+    <meta name="author" content="Aleksandar Kostadinovski">
+
+    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+
+<style>
+    .item{
+        border-bottom:dotted;
+        border-bottom-width:1px;
+        padding:5px;
+    }
+
+    #results li h2{
+        font-size:18px;
+    }
+    #results li h3{
+        font-size:15px;
+    }
+
+    #dropdown.open{
+        height:auto;
+    }
+    .right-details{
+        float:right;
+    }
+    #dropdown {
+
+        height: 0px;
+        width: 30%;
+    }
+        #dropdown li {
+            margin: 0px;
+            padding: 1px;
+            background-color: aquamarine;
+            z-index:1;
+        }
+    #detailes {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        width: 50%;
+        height: 100%;
+        background-color: azure;
+    }
+    #detailes li{
+        padding:10px;
+        border-bottom:solid;
+        border-bottom-width:1px;
+
+    }
+</style>
+</head>
+
+<body>
+
+    <input type="text" id="search-input" style="width:30%"/>
+    <button type="button" id="get">Get</button>
+    <ul id="dropdown">
+
+    </ul>
+
+
+
+    <h3>Items</h3>
+    <ul id="results">
+
+    </ul>
+
+    <div id="detailes">
+        <ul>
+            <li id="name">
+                <span>Name: </span><span class="right-details"></span>
+            </li>
+            <li id="url">
+                <span>Url: </span><span class="right-details"></span>
+            </li>
+            <li id="score">
+                <span>Score: </span><span class="right-details"></span>
+            </li>
+        </ul>
+    </div>
+
+    <!--Scripts-->
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+
+
+
+</html>

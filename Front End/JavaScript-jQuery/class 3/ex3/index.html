@@ -1,0 +1,69 @@
+﻿<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>NewMens JS/jQuery</title>
+    <meta name="description" content="js/jQuery lessons ">
+    <meta name="author" content="Aleksandar Kostadinovski">
+
+    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+    
+    <style>
+        .gallery__button {
+            width: 100px;
+            height: 100%;
+            float: left;
+        }
+
+        .gallery__content {
+            float: left;
+            width: 400px;
+            height: 400px;
+        }
+
+        .gallery__content-image {
+            width: 400px;
+            height: 400px;
+            display: none;
+        }
+
+        .gallery__content-image--active {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="gallery">
+        <div class="gallery__button gallery__button--left">
+            <button id="nazad"> Back </button>
+        </div>
+
+        <div class="gallery__content">
+            <img class="gallery__content-image" src="https://www.nature.org/cs/groups/webcontent/@web/documents/media/2016-photocontest-yosemite-w-1.jpg">
+            <img class="gallery__content-image" src="https://scontent-vie1-1.xx.fbcdn.net/v/t1.0-9/10492499_766836143367679_5870385788438363650_n.jpg?oh=dc1312e970b31da9c3b33aef29cce037&oe=5A942A5F">
+            <img class="gallery__content-image"
+                 src="https://scontent-vie1-1.xx.fbcdn.net/v/t1.0-9/988373_630561676995127_1305479403_n.jpg?oh=ac86aca50abef373eb6cc041cd6bd3e8&oe=5AD7CE3A">
+        </div>
+        <div class="gallery__button gallery__button--right">
+            <button id="napred"> next </button>
+        </div>
+
+    </div>
+
+
+
+    <!--Scripts-->
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+
+
+
+</html>

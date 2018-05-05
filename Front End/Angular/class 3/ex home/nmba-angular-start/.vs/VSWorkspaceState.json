@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\contacts.details",
+    "\\src\\app\\contacts.list",
+    "\\src\\app\\models",
+    "\\src\\app\\shared"
+  ],
+  "SelectedNode": "\\src\\app\\contacts.app.component.ts",
+  "PreviewInSolutionExplorer": false
+}
